@@ -14,10 +14,8 @@ jobs:
         with:
           fetch-depth: 0
       - name: get list of files
-        id: getfile0
         run: |
-          echo "ls *.xml"
-      - name: get list of (changed) files
-        id: getfile1
+          ls *.xml
+      - name: produce pdfs
         run: |
-          echo "::set-output name=files::$(find . -iname '*.yml' -maxdepth 1 -type f -exec sh -c 'pandoc -d ${0} -o ${0%.yml}.pdf' {} \;)"
+          find ./ -iname '*.xml' -type f -exec sh -c 'pandoc -d ${0} -o output/${0%.yml}.pdf' {} \;

@@ -42,8 +42,8 @@ For a new Set List, you should create a **new file** specific to that gig using 
 3. Click the "Add file" dropdown button, followed by the "Create new file" button.
 4. In the "Name Your File ..." field, name the new Set List for that gig as "set-list-location-date.yml" (e.g., "set-list-nicholson-2021-02-08.yml").
 5. Paste the contents from the recent Set List that you just copied.
-6. Edit line 12 to reflect the name of the gig.
-7. Edit lines 14 and beyond, and include the file name for each song in the gig.
+6. Edit line 13 to reflect the name of the gig.
+7. Edit lines 16 and beyond, and include the file name for each song in the gig.
 8. Click the green "Commit new file" button at the bottom of the page to save.
 9. Wait a few minutes, then a PDF file with the same name as the `*.yml` file will appear in the repo.
 10. Double-click to download and open the PDF file.
