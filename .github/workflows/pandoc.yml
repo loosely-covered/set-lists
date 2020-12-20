@@ -16,7 +16,7 @@ jobs:
       - name: get list of (changed) files
         id: getfile
         run: |
-          echo "::set-output name=files::$(find . -iname '*.yml' -type f | xargs)"
+          echo "::set-output name=files::$(find . -iname '*.yml' -maxdepth 1 -type f | xargs)"
       - name: echo the changed files
         run: |
           for i in ${{ steps.getfile.outputs.files }}
