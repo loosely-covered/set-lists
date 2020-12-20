@@ -16,5 +16,5 @@ jobs:
       - name: get list of (changed) files
         id: getfile
         run: |
-          echo "::set-output name=files::$(find . -iname '*.yml' -maxdepth 1 -type f"
+          echo "ls *.xml"
           echo "::set-output name=files::$(find . -iname '*.yml' -maxdepth 1 -type f -exec sh -c 'pandoc -d ${0} -o ${0%.yml}.pdf' {} \;)"
