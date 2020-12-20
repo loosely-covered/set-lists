@@ -1,4 +1,4 @@
-name: Make Set List PDF with Pandoc
+name: Set List
 
 on: push
 
@@ -16,16 +16,4 @@ jobs:
       - name: get list of (changed) files
         id: getfile
         run: |
-          echo "::set-output name=files::$(find . -iname '*.yml' -maxdepth 1 -type f | xargs -n 1 basename | cut -d '.' -f1)"
-      - name: echo the changed files
-        run: |
-          for i in ${{ steps.getfile.outputs.files }}
-          do
-              echo $i
-          done
-      - name: convert yml to pdf
-        run: |
-          for i in ${{ steps.getfile.outputs.files }}
-          do
-              pandoc -d $i.yml -o $i.pdf
-          done
+          echo "::set-output name=files::$(find . -iname '*.yml' -maxdepth 1 -type f -exec sh -c 'pandoc -d ${0} -o ${0%.yml}.pdf' {} \;)"
