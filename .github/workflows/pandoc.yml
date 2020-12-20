@@ -9,9 +9,6 @@ jobs:
       image: docker://pandoc/latex:2.9
       options: --entrypoint=sh
     steps:
-      - name: install fonts
-        run: |
-          sudo apt update && sudo apt install fonts-firacode
       - name: checkout the repo
         uses: actions/checkout@v2
         with:
