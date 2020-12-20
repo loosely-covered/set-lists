@@ -1,0 +1,46 @@
+\usepackage[fontsize=14pt]{scrextend}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{FiraMono}
+\usepackage{geometry}
+\geometry{
+ letterpaper,
+ left=0.5in,
+ right=0.5in,
+ top=0.75in,
+ bottom=0.5in
+}
+\twocolumn
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+   \pagestyle{fancy}
+   \fancyhead[L]{Loosely Covered}
+   \fancyhead[C]{}
+   \fancyhead[R]{Page \thepage\ of \pageref{LastPage}}
+   \fancyfoot[L]{}
+   \fancyfoot[C]{\hyperlink{toc}{\Large Contents}}
+   \fancyfoot[R]{}
+\addtocontents{toc}{\protect\hypertarget{toc}{}}
+\setcounter{secnumdepth}{1}
+\usepackage[compact]{titlesec}
+\titlespacing*{\section}      {0em}{.75em}{.5em}
+\titlespacing*{\subsection}   {0em}{.50em}{.25em}
+\titlespacing*{\subsubsection}{0em}{.15em}{0em}
+\let\oldsection\section
+\renewcommand\section{\clearpage\oldsection}
+\usepackage{tocloft}
+\renewcommand\cftsecfont{\LARGE}
+\renewcommand\cftsecpagefont{\LARGE}
+\setlength\cftparskip{-11pt}
+% \setlength\cftparskip{-12pt}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+}
+\makeatletter
+\let\latexl@section\l@section
+\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+\renewcommand{\@cftmaketoctitle}{}
+\makeatother
