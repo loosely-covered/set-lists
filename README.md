@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the Set Lists for Loosely Covered's gigs.
+This repository contains the Set Lists for our gigs.
 
 This `set-lists` repo contains YAML files (e.g., `test-set-list.yml`) that each define:
 
@@ -19,25 +19,25 @@ For a new Set List, you should create a **new file** specific to that gig using 
 1. Click on a `.yml` Set List file from a recent gig (e.g., "set-list-nicholson-2021-02-08.yml").
 2. Copy the contents of that file (the lines looking like this):
 
-  ```
-  # ONLY EDIT LINE 12, and LINES 14 AND BEYOND
-  from: markdown
-  to: pdf
-  standalone: true
-  self-contained: true
-  pdf-engine: xelatex
-  include-in-header: [_header.sty]
-  table-of-contents: true
-  toc-depth: 1
-  metadata:
-    title:
-      - Test Set List # change to name of the gig
-  input-files: # add a lead sheet for each song in the gig
-    - ./lead-sheet/Across-The-Universe.md
-    - ./lead-sheet/All-About-That-Bass.md
-    - ./lead-sheet/Amber.md
-    - ./lead-sheet/Angel-From-Montgomery.md
-  ```
+        ```yaml
+        # ONLY EDIT LINE 12, and LINES 14 AND BEYOND
+        from: markdown
+        to: pdf
+        standalone: true
+        self-contained: true
+        pdf-engine: xelatex
+        include-in-header: [_header.sty]
+        table-of-contents: true
+        toc-depth: 1
+        metadata:
+          title:
+            - Test Set List # change to name of the gig
+        input-files: # add a lead sheet for each song in the gig
+          - ./lead-sheet/Across-The-Universe.md
+          - ./lead-sheet/All-About-That-Bass.md
+          - ./lead-sheet/Amber.md
+          - ./lead-sheet/Angel-From-Montgomery.md
+        ```
 
 3. Click the "Add file" dropdown button, followed by the "Create new file" button.
 4. In the "Name Your File ..." field, name the new Set List for that gig as "set-list-location-date.yml" (e.g., "set-list-nicholson-2021-02-08.yml").
