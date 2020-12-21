@@ -4,13 +4,14 @@ on: push
 
 jobs:
   convert_via_pandoc:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     container:
       image: docker://pandoc/latex:2.10.1
       options: --entrypoint=sh
     steps:
       - run: |
-          apt-get install texlive-latex-recommended
+          sudo apt-get update && apt-get install -y \
+          texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
       - name: checkout the repo
         uses: actions/checkout@v2
         with:
