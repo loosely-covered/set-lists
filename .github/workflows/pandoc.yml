@@ -6,9 +6,11 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-20.04
     container:
-      image: docker://pandoc/latex:2.9
+      image: docker://pandoc/latex:2.10.1
       options: --entrypoint=sh
     steps:
+      - run: |
+          apt-get install texlive-latex-recommended
       - name: checkout the repo
         uses: actions/checkout@v2
         with:
