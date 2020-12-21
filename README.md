@@ -10,7 +10,7 @@ This `set-lists` repo contains YAML files (e.g., `test-set-list.yml`) that each 
 - a table of contents that lists all the songs for that gig; and
 - for each of those songs, a page containing the lead sheet for that song.
 
-The `lead-sheet` folder contains all of the "lead sheets" (lyrics, plus structure) for the songs in the Loosely Covered repertoire.  If new songs need to be added to our repertoire, before creating the new Set List, go to the `lead-sheets` folder, and follow the instructions below to add the new song(s).
+The `lead-sheet` folder contains all of the "lead sheets" (lyrics, plus structure) for the songs in the Loosely Covered repertoire.  If new songs need to be added to our repertoire, before creating the new Set List, go to the `lead-sheets` folder, and follow the instructions therein to add the new song(s).
 
 ## Create a Set List
 
@@ -29,23 +29,25 @@ For a new Set List, you should create a **new file** specific to that gig using 
         include-in-header: [_header.sty]
         table-of-contents: true
         toc-depth: 1
+        # change to name of the new gig
         metadata:
           title:
-            - Test Set List # change to name of the gig
-        input-files: # add a lead sheet for each song in the gig
+            - Test Set List
+        # add a lead sheet for each song in the new gig
+        input-files:
           - ./lead-sheet/Across-The-Universe.md
           - ./lead-sheet/All-About-That-Bass.md
           - ./lead-sheet/Amber.md
           - ./lead-sheet/Angel-From-Montgomery.md
         ```
 
-3. Click the "Add file" dropdown button, followed by the "Create new file" button.
+3. Back on the main repo page, click the "Add file" dropdown button, followed by the "Create new file" button.
 4. In the "Name Your File ..." field, name the new Set List for that gig as "set-list-location-date.yml" (e.g., "set-list-nicholson-2021-02-08.yml").
 5. Paste the contents from the recent Set List that you just copied.
-6. Edit line 13 to reflect the name of the gig.
-7. Edit lines 16 and beyond, and include the file name for each song in the gig.
+6. Edit line 13 to reflect the name of the new Set List.
+7. Edit lines 16 and beyond, and include the file name for each song in the new Set Lis.
 8. Click the green "Commit new file" button at the bottom of the page to save.
-9. Wait a few minutes, then a PDF file with the same name as the `*.yml` file will appear in the repo.
+9. Wait a few minutes, then the PDF file for the new Set List will appear in the repo.
 10. Double-click to download and open the PDF file.
 
 ## How Each Set List Gets Built

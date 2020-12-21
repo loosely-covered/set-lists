@@ -15,48 +15,31 @@ jobs:
           tlmgr update --self
           tlmgr install koma-script geometry fira lastpage fancyhdr titlesec tocloft hyperref
 
-      - name: checkout the repo
+      - name: Checkout the repo
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
-      - name: prepare output directories
+      - name: Prepare output directories
         run: |
           for d in */; do
             mkdir -p output/$d
           done
 
-      - name: produce pdfs
+      - name: Produce pdfs
         run: |
           find . -iname '*.yml' -type f -maxdepth 1 -exec sh -c 'pandoc -d ${0} -o output/${0%.yml}.pdf' {} \;
 
-      - name: upload PDFs
+      - name: Upload PDF Artifacts
         uses: actions/upload-artifact@master
         with:
           name: output
           path: output
 
-      - name: Set datetime variable
-        run: echo "NOW=$(date +'%Y-%m-%d.%H%M%S')" >> $GITHUB_ENV
-
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: Tag-${{ env.NOW }}
-          release_name: v${{ env.NOW }}
-          draft: false
-          prerelease: false
-
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-          asset_path: output
-          asset_name: output
-          asset_content_type: application/pdf
+      - name: Commit PDF Artifacts
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add *.pdf
+          git commit *.pdf -m 'Commit PDF file(s)' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
