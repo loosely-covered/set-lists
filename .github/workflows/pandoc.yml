@@ -10,8 +10,9 @@ jobs:
       options: --entrypoint=sh
     steps:
       - run: |
-          sudo apt-get update && apt-get install -y \
-          texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+          apk update
+          apk add texlive-latex-base texlive-latex-recommended \
+          texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
       - name: checkout the repo
         uses: actions/checkout@v2
         with:
