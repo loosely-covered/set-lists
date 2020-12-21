@@ -3,27 +3,31 @@ name: Set List
 on: push
 
 jobs:
-  convert_via_pandoc:
-    runs-on: ubuntu-18.04
-    container:
-      image: docker://pandoc/latex:2.10.1
-      options: --entrypoint=sh
+  build:
+    runs-on: macOS-latest
     steps:
-      - run: |
-          apk update
-          apk add texlive-full
-      - name: checkout the repo
+      - name: Checkout repo
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
+      - name: Install pandoc
+        run: brew install pandoc
+
+      - name: Setup TinyTeX
+        uses: r-lib/actions/setup-tinytex@v1
+      - run: tlmgr --version
+
       - name: prepare output directories
         run: |
           for d in */; do
             mkdir -p output/$d
           done
+
       - name: produce pdfs
         run: |
           find . -iname '*.yml' -type f -maxdepth 1 -exec sh -c 'pandoc -d ${0} -o output/${0%.yml}.pdf' {} \;
+
       - name: upload PDFs
         uses: actions/upload-artifact@master
         with:
