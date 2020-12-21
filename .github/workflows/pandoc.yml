@@ -20,21 +20,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Prepare output directories
-        run: |
-          for d in */; do
-            mkdir -p output/$d
-          done
-
       - name: Produce pdfs
         run: |
-          find . -iname '*.yml' -type f -maxdepth 1 -exec sh -c 'pandoc -d ${0} -o output/${0%.yml}.pdf' {} \;
-
-      - name: Upload PDF Artifacts
-        uses: actions/upload-artifact@master
-        with:
-          name: output
-          path: output
+          find . -iname '*.yml' -type f -maxdepth 1 -exec sh -c 'pandoc -d ${0} -o ${0%.yml}.pdf' {} \;
 
       - name: Commit PDF Artifacts
         uses: stefanzweifel/git-auto-commit-action@v4
