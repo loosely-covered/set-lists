@@ -10,6 +10,7 @@ jobs:
       options: --entrypoint=sh
     steps:
       - run: |
+          tlmgr update --self
           tlmgr install koma-script geometry fira lastpage fancyhdr titlesec tocloft hyperref
       - name: checkout the repo
         uses: actions/checkout@v2
