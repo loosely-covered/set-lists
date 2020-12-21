@@ -37,9 +37,4 @@ jobs:
           path: output
 
       - name: Commit PDF Artifacts
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add *.pdf
-          git commit *.pdf -m 'Commit PDF file(s)' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+        uses: stefanzweifel/git-auto-commit-action@v4
