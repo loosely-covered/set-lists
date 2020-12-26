@@ -12,14 +12,14 @@ A Set List contains:
 - a table of contents that lists all the songs for that gig; and
 - for each of those songs, a page containing the lead sheet for that song.
 
-The `lead-sheet` folder contains all of the "lead sheets" (lyrics, plus structure) for the songs in our repertoire.  If new songs need to be added, before creating the new Set List, go to the `lead-sheets` folder, and follow the README instructions therein to add the new song(s).
+The `lead-sheet` folder contains all of the "lead sheets" (lyrics, plus structure) for the songs in our repertoire.  If new songs need to be added, before creating the new Set List, go to the `lead-sheets` folder, and follow the README instructions therein to add the new song(s).  **Don't forget** to leave a blank line at the end of every lead sheet!
 
 ## Create a Set List
 
 For a new Set List, you should create a **new file** specific to that gig using the following instructions:
 
 1. Click the "Add file" dropdown button, followed by the "Create new file" button.
-2. In the "Name Your File ..." field, name the new Set List for that gig as "set-list-location-date.txt" (e.g., "set-list-nicholson-2021-02-08.txt").
+2. In the "Name Your File ..." field, name the new Set List for that gig as "set-list-location-date.md" (e.g., "set-list-nicholson-2021-02-08.md").
 3. Add each song on a new line, using the format "./lead-sheet/Amber.md".
 6. Click the green "Commit new file" button at the bottom of the page to save.
 7. Wait a few minutes, then the PDF file for the new Set List will appear in the repo.
@@ -33,8 +33,8 @@ This repo uses the command-line tool [`pandoc`](https://pandoc.org) to combine a
 
 Once you commit your changes to any edited file(s), this repo uses GitHub Actions to produce the PDF file behind the scenes using `pandoc`.  In effect, GitHub Actions runs the following command:
 
-`pandoc -d _defaults.yml -M title='Murphys 2020-01-08' $(cat 2020-01-08-Murphys.txt) -o 2020-01-08-Murphys.pdf`
+`pandoc -d _defaults.yml -M title='Murphys 2020-01-08' $(cat 2020-01-08-Murphys.md) -o 2020-01-08-Murphys.pdf`
 
 for each Set List.  **Please be patient**; it may take a few minutes for the PDF to get generated.
 
-If using VSCode locally, the `tasks.json` file enables building an open Set list with Cmd-Shift-B.
+If using VSCode locally, the `.vscode/tasks.json` file enables building an open Set list with Cmd-Shift-B.

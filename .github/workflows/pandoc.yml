@@ -22,9 +22,18 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
-      - name: Produce pdfs
-        run: |
-          find . -iname '*.yml' -type f -maxdepth 1 -exec sh -c 'pandoc -d ${0} -o ${0%.yml}.pdf' {} \;
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: "md"
 
-      - name: Commit PDF Artifacts
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - run: |
+          mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
+          for added_modified_file in "${added_modified_files[@]}"; do
+            pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
+          done
+      # - name: Produce pdfs
+      #   run: |
+      #     find . -iname '*.md' -type f -maxdepth 1 -exec sh -c 'pandoc -d _defaults.yml -M title=${0} ${0} -o ${0%.md}.pdf' {} \;
+      # - name: Commit PDF Artifacts
+      #   uses: stefanzweifel/git-auto-commit-action@v4
