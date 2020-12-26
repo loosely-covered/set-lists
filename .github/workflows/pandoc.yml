@@ -11,6 +11,7 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
+      # add `--verify-repo-none` to tlmgr
       - run: |
           tlmgr update --self
           tlmgr install koma-script geometry fira lastpage fancyhdr titlesec tocloft hyperref

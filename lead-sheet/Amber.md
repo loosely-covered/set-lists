@@ -1,9 +1,9 @@
 # Amber
 
-
-### Guitar Intro  16x  
+### Guitar Intro  16x
 
 ### Verse  16x
+
 .. Brainstorm
 Take me away from the norm
 I've got to tell you somethin'
@@ -12,6 +12,7 @@ I had to put it in a song
 And it goes like
 
 ### Chorus  24x
+
 Whoa
 Amber is the color of your energy
 Whoa
@@ -32,6 +33,7 @@ Shades of gold displayed naturally
 ### Guitar  16x
 
 ### Chorus  28x ?
+
 Whoa
 Amber is the color of your energy
 Whoa
@@ -46,6 +48,7 @@ Nothin' good comes easily
 Sometimes you've got to fight
 
 ### Chorus  24x
+
 Whoa
 Amber is the color of your energy
 Whoa

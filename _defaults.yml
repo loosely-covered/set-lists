@@ -1,0 +1,8 @@
+from: markdown
+to: pdf
+standalone: true
+self-contained: true
+pdf-engine: xelatex
+include-in-header: [_header.sty]
+table-of-contents: true
+toc-depth: 1
