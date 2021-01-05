@@ -17,6 +17,7 @@
 ./lead-sheet/Back-In-Black.md
 ./lead-sheet/Bad-Romance.md
 ./lead-sheet/Bad-Things.md
+./lead-sheet/Badfish.md
 ./lead-sheet/Bang-a-Gong-Get-It-On.md
 ./lead-sheet/Beer-Drinkers-n-Hell-Raisers.md
 ./lead-sheet/Behind-Blue-Eyes.md
