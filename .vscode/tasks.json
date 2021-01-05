@@ -6,7 +6,7 @@
     {
       "label": "pandoc",
       "type": "shell",
-      "command": "pandoc -d _defaults.yml -M title=${fileBasenameNoExtension} $(cat ${fileBasenameNoExtension}.txt) -o ${fileBasenameNoExtension}.pdf",
+      "command": "pandoc -d _defaults.yml -M title=${fileBasenameNoExtension} $(cat ${fileBasenameNoExtension}.md) -o ${fileBasenameNoExtension}.pdf",
       "group": {
         "kind": "build",
         "isDefault": true

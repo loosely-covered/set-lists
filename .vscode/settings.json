@@ -1,0 +1,21 @@
+{
+  "sqltools.connections": [
+    {
+      "snowflakeOptions": {
+        "clientSessionKeepAlive": true,
+        "clientSessionKeepAliveHeartbeatFrequency": 3600
+      },
+      "previewLimit": 50,
+      "driver": "Snowflake",
+      "username": "iv_loader",
+      "password": "@jZEGad6EEbaBHuFkufC",
+      "account": "dja78347",
+      "name": "Loader",
+      "database": "fannie_raw",
+      "warehouse": "load"
+    }
+  ],
+  "cSpell.enableFiletypes": [
+    "!yaml"
+  ]
+}

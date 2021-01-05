@@ -21,9 +21,9 @@ For a new Set List, you should create a **new file** specific to that gig using 
 1. Click the "Add file" dropdown button, followed by the "Create new file" button.
 2. In the "Name Your File ..." field, name the new Set List for that gig as "set-list-location-date.md" (e.g., "set-list-nicholson-2021-02-08.md").
 3. Add each song on a new line, using the format "./lead-sheet/Amber.md".
-6. Click the green "Commit new file" button at the bottom of the page to save.
-7. Wait a few minutes, then the PDF file for the new Set List will appear in the repo.
-8. Double-click to download and open the PDF file.
+4. Click the green "Commit new file" button at the bottom of the page to save.
+5. Wait a few minutes, then the PDF file for the new Set List will appear in the repo.
+6. Double-click to download and open the PDF file.
 
 ## How Each Set List Gets Built
 
@@ -37,4 +37,4 @@ Once you commit your changes to any edited file(s), this repo uses GitHub Action
 
 for each Set List.  **Please be patient**; it may take a few minutes for the PDF to get generated.
 
-If using VSCode locally, the `.vscode/tasks.json` file enables building an open Set list with Cmd-Shift-B.
+If using VSCode locally, the `.vscode/tasks.json` file enables building an open Set list with Cmd-Shift-B.  To create a Master Set List locally, run `ls ./lead-sheet/*.md > 2020-01-04-Master.md`.
