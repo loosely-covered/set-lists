@@ -33,7 +33,7 @@ This repo uses the command-line tool [`pandoc`](https://pandoc.org) to combine a
 
 Once you commit your changes to any edited file(s), this repo uses GitHub Actions to produce the PDF file behind the scenes using `pandoc`.  In effect, GitHub Actions runs the following command:
 
-`pandoc -d _defaults.yml -M title='Murphys 2020-01-08' $(cat 2020-01-08-Murphys.md) -o 2020-01-08-Murphys.pdf`
+`pandoc -d _defaults.yml -M title='Murphys 2020-01-08' $(cat 2020-01-08-Murphys.txt) -o 2020-01-08-Murphys.pdf`
 
 for each Set List.  **Please be patient**; it may take a few minutes for the PDF to get generated.
 
