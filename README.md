@@ -37,4 +37,4 @@ Once you commit your changes to any edited file(s), this repo uses GitHub Action
 
 for each Set List.  **Please be patient**; it may take a few minutes for the PDF to get generated.
 
-If using VSCode locally, the `.vscode/tasks.json` file enables building an open Set list with Cmd-Shift-B.  To create a Master Set List locally, run `ls ./lead-sheet/*.md > 2020-01-04-Master.md`.
+If using VSCode locally, the `.vscode/tasks.json` file enables building an open Set list with Cmd-Shift-B.  To create a Master Set List locally, run `ls ./lead-sheet/*.md > 2020-01-04-Master.txt`.
