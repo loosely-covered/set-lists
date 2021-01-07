@@ -1,11 +1,11 @@
 # You Shook Me All Night Long
 
-
 ### Intro  8x
 
 ### Guitar  8x
 
 ### Verse  16x
+
 She was a fast machine  
 She kept her motor clean  
 She was the best damn woman I had ever seen  
@@ -21,13 +21,15 @@ She told me to come but I was already there
 'Cause the walls start shaking  
 The earth was quaking  
 My mind was aching  
-And we were making it, and you .. 
+And we were making it, and you ..
 
 ### Chorus  8x
+
 Shook me all night long  
 Yeah you shook me all night long  
 
 ### Verse  16x
+
 Working double time  
 On the seduction line  
 She was one of a kind, she's just mine all mine  
@@ -46,11 +48,13 @@ My mind was aching
 And we were making it and you ..
 
 ### Chorus  8x
+
 ..
 (ya knocked me out, I said you)  
 ..
 
 ### Chorus  8x
+
 ..
 (heaven shakin')  
 ..
@@ -59,6 +63,7 @@ And we were making it and you ..
 ### Solo  16x
 
 ### Chorus  
+
 (you really got me and you)  
 Shook Me All Night Long  
 Yeah you ... shook Me all night long  

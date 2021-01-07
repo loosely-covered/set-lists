@@ -40,7 +40,6 @@
 ./lead-sheet/Cheap-Sunglasses.md
 ./lead-sheet/Closer-To-Fine.md
 ./lead-sheet/Closing-Time.md
-./lead-sheet/Cochise.md
 ./lead-sheet/Cold-Hard-Bitch.md
 ./lead-sheet/Come-As-You-Are.md
 ./lead-sheet/Come-Together.md
@@ -71,6 +70,7 @@
 ./lead-sheet/Faith.md
 ./lead-sheet/Fast-As-You.md
 ./lead-sheet/Feeling-Alright.md
+./lead-sheet/Find-Yourself.md
 ./lead-sheet/Fire-On-The-Mountain.md
 ./lead-sheet/Fly-Away.md
 ./lead-sheet/Follow-Me.md
@@ -83,8 +83,8 @@
 ./lead-sheet/Give-Me-One-Reason.md
 ./lead-sheet/Givin-The-Dog-A-Bone.md
 ./lead-sheet/Glycerine.md
+./lead-sheet/God-Of-Wine.md
 ./lead-sheet/Going-Down-The-Road-Feeling-Bad.md
-./lead-sheet/Gold-On-The-Ceiling.md
 ./lead-sheet/Gone-Gone-Gone.md
 ./lead-sheet/Gone-Shootin.md
 ./lead-sheet/Good-Times-Bad-Times.md
@@ -139,7 +139,7 @@
 ./lead-sheet/Little-Less-Conversation.md
 ./lead-sheet/Little-Lover.md
 ./lead-sheet/Little-Sister.md
-./lead-sheet/Living-After-Midnight.md
+./lead-sheet/Livin-After-Midnight.md
 ./lead-sheet/Locked-Out-Of-Heaven.md
 ./lead-sheet/Lonely-Is-the-Night.md
 ./lead-sheet/Long-Train-Runnin.md
@@ -182,11 +182,9 @@
 ./lead-sheet/Plush.md
 ./lead-sheet/Pompeii.md
 ./lead-sheet/Possum-Kingdom.md
-./lead-sheet/Praise-You.md
 ./lead-sheet/Pride.md
 ./lead-sheet/Psycho-Killer.md
 ./lead-sheet/Purple-Rain.md
-./lead-sheet/README.md
 ./lead-sheet/Radioactive.md
 ./lead-sheet/Ramble-On.md
 ./lead-sheet/Rebel-Yell.md
@@ -201,6 +199,7 @@
 ./lead-sheet/Santeria.md
 ./lead-sheet/Say-It-Ain-t-So.md
 ./lead-sheet/Seven-Nation-Army.md
+./lead-sheet/Sex-And-Candy.md
 ./lead-sheet/Sex-on-Fire.md
 ./lead-sheet/Shake-Shake-Shake.md
 ./lead-sheet/Sharp-Dressed-Man.md
@@ -215,12 +214,10 @@
 ./lead-sheet/Some-Kind-Of-Wonderful.md
 ./lead-sheet/Song-2.md
 ./lead-sheet/Soulshine.md
-./lead-sheet/Stars.md
 ./lead-sheet/Stayin-Alive.md
 ./lead-sheet/Steady-As-She-Goes.md
 ./lead-sheet/Sullivan-Street.md
 ./lead-sheet/Superstition-Single-Version.md
-./lead-sheet/Sweet-Child-Of-Mine.md
 ./lead-sheet/Sweet-Emotion.md
 ./lead-sheet/Sweet-Home-Alabama.md
 ./lead-sheet/TNT.md
@@ -234,7 +231,6 @@
 ./lead-sheet/The-Scientist.md
 ./lead-sheet/Thinking-Out-Loud.md
 ./lead-sheet/This-Is-How-You-Remind-Me.md
-./lead-sheet/Tighten-Up.md
 ./lead-sheet/Times-Like-These.md
 ./lead-sheet/Tom-Sawyer.md
 ./lead-sheet/Touch-Too-Much.md
@@ -257,7 +253,6 @@
 ./lead-sheet/Wheels.md
 ./lead-sheet/When-I-Come-Around.md
 ./lead-sheet/When-I-m-Gone.md
-./lead-sheet/When-Im-Gone.md
 ./lead-sheet/Whenever-You-Come-Around.md
 ./lead-sheet/Where-the-Streets-Have-No-Names.md
 ./lead-sheet/White-Wedding.md
@@ -269,7 +264,6 @@
 ./lead-sheet/Wonderwall.md
 ./lead-sheet/Word-Up.md
 ./lead-sheet/Yellow-Ledbetter.md
-./lead-sheet/You-Can-t-Always-Get-What-You-Want.md
 ./lead-sheet/You-Found-Me.md
 ./lead-sheet/You-Oughta-Know.md
 ./lead-sheet/You-Shook-Me-All-Night-Long.md

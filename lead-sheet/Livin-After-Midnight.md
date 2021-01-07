@@ -1,4 +1,4 @@
-# Living After Midnight
+# Livin After Midnight
 
 Livin' after midnight, rockin' to the dawn  
 Lovin' till the mornin', then I'm gone, I'm gone  

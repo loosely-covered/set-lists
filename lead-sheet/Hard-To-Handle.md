@@ -1,9 +1,9 @@
 # Hard To Handle
 
-
 ### Intro  5x
 
 ### Verse  8x
+
 Baby, here I am  
 I'm the man on the scene  
 I can give you what you want  
@@ -15,6 +15,7 @@ When I get through throwin' it on you
 You gotta' come back for more  
 
 ### Chorus 1  4x
+
 Boys and things that come by the dozen  
 That ain't nothin' but drugstore lovin'  
 Hey little thing, let me light your candle  
@@ -24,6 +25,7 @@ Now gets around
 ### Break  2x
 
 ### Verse  8x
+
 Action speaks louder than words  
 And I'm a man of great experience  
 I know you've got another man  
@@ -35,11 +37,13 @@ I'm advertising love for free
 So you can place your ad with me  
 
 ### Chorus  4x
+
 (dime by the dozen; ten cent lovin')  
 
 ### Break  4x
 
 ### Verse  8x
+
 Baby, here I am  
 I'm the man on your scene  
 I can give you what you want  
@@ -53,16 +57,20 @@ You gotta' come runnin' back for more
 ### Chorus  4x  
 
 ### Break  4x
+
 (...; hard; hard to handle now; oh yea yea yeh yea)  
 
 ### Solo  8x
 
 ### Break  4x  
+
 (...; yeah; .. so hard to handle now; oh yea)
 
 ### Solo  8x  
+
 (baby; good lovin’; baby; baby)  
 (oh good lovin’; I need good lovin’; ...; I got to have it)
 
 ### Break  4x  
+
 (oh yeah; oh; so hard; yeah)  

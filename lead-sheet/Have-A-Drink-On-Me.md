@@ -1,8 +1,5 @@
-# Have A Drink On Me
+# Have A Drink On
 
-AC/DC  
-Back in Black  
-Have A Drink On Me  
 Whiskey, gin and brandy  
 With a glass I'm pretty handy  
 I'm trying to walk a straight line  
@@ -34,4 +31,4 @@ Gonna drink it dry
 Gonna get me high  
 Come on all the boys  
 Make a noise  
-Have a drink on me
+Have a drink on

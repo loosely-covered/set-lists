@@ -1,8 +1,5 @@
 # Criminal
 
-Fiona Apple  
-Miscellaneous  
-Criminal  
 I've been a bad bad girl  
 I've been careless with a delicate man  
 And its a sad sad world  
@@ -20,7 +17,7 @@ And I need to redeemed
 To the one I've sinned against  
 Because he's all I ever knew of love  
 Heaven help me for the way I am  
-Save me from these evil deeds   
+Save me from these evil deeds
 Before I get them done  
 I know tomorrow brings the consequence  
 At hand  
@@ -45,7 +42,7 @@ Before there's hell to pay
 Give me room to lay the law and let me go  
 I've got to make a play  
 To make my lover stay  
-So what would an angel say   
+So what would an angel say
 The devil wants to know  
 What I need is a good defense  
 'Cause I'm feelin' like a criminal  
