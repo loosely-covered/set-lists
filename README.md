@@ -1,5 +1,7 @@
 # Loosely Covered - Set Lists
 
+TODO automatically build updated Master Set List when there are any changes
+
 ## Overview
 
 This repository contains the Set Lists for our gigs.
@@ -12,7 +14,7 @@ A Set List contains:
 - a table of contents that lists all the songs for that gig; and
 - for each of those songs, a page containing the lead sheet for that song.
 
-The `lead-sheet` folder contains all of the "lead sheets" (lyrics, plus structure) for the songs in our repertoire.  If new songs need to be added, before creating the new Set List, go to the `lead-sheets` folder, and follow the README instructions therein to add the new song(s).  **Don't forget** to leave a blank line at the end of every lead sheet!
+The `lead-sheet` folder contains all of the "lead sheets" (lyrics, plus structure) for the songs in our repertoire.  If new songs need to be added, before creating the new Set List, go to the `lead-sheet` folder, and follow the README instructions therein to add the new song(s).  **Don't forget** to leave a blank line at the end of every lead sheet!
 
 ## Create a Set List
 
@@ -35,9 +37,12 @@ Once you commit your changes to any edited file(s), this repo uses GitHub Action
 
 `pandoc -d _defaults.yml -M title='Murphys 2020-01-08' $(cat 2020-01-08-Murphys.txt) -o 2020-01-08-Murphys.pdf`
 
-for each Set List.  **Please be patient**; it may take a few minutes for the PDF to get generated.
+for each Set List.  **Please be patient**; it may take a few minutes for the Set List PDF to get generated.
 
-If using VSCode locally, the `.vscode/tasks.json` file enables building an open Set list with Cmd-Shift-B.  To create a Master Set List locally, run `ls ./lead-sheet/*.md > 2020-01-04-Master.txt`.
+The Master Set List automatically gets updated each time there's a change ???
+by running the following command:
+
+`pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"`
 
 ## Create a New Lead Sheet  
 
@@ -101,3 +106,5 @@ To add this kind of structure to a Lead Sheet, do the following:
 3. Make the desired changes to the structure of the song.
 5. Click the green "Commit changes" button at the bottom of the page to save.
 6. The edited lead sheet now will appear in the `lead-sheet` folder of the repo.
+
+If using VSCode locally, run `lyrics-finder "Sublime" "What I Got" | awk '{print $0 "  ";next}1' > ./lead-sheet/What-I-Got.md`

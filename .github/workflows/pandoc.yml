@@ -22,32 +22,31 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
-      - name: Render changed Markdown files
+      - name: Update Master Set List
         run: |
-          MD_PATH=($(git diff-tree --no-commit-id --name-only -r HEAD | grep '[.]md$'))
-          for (file in commandArgs(TRUE)) rmarkdown::render(file)' ${RMD_PATH[*]}
-
-          for added_modified_file in "${added_modified_files[@]}"; do
-            pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
-          done
-
-      - name: Commit results
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git commit ${RMD_PATH[*]/.Rmd/.md} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
-
-      - id: files
-        uses: jitterbit/get-changed-files@v1
-
-      - run: |
-          mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
-          for added_modified_file in "${added_modified_files[@]}"; do
-            pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
-          done
-      # - name: Produce pdfs
+          pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"
+      # - name: Render changed Markdown files
       #   run: |
-      #     find . -iname '*.md' -type f -maxdepth 1 -exec sh -c 'pandoc -d _defaults.yml -M title=${0} ${0} -o ${0%.md}.pdf' {} \;
-      # - name: Commit PDF Artifacts
-      #   uses: stefanzweifel/git-auto-commit-action@v4
+      #     MD_PATH=($(git diff-tree --no-commit-id --name-only -r HEAD | grep '[.]md$'))
+      #     for (file in commandArgs(TRUE)) rmarkdown::render(file)' ${RMD_PATH[*]}
+      #     for added_modified_file in "${added_modified_files[@]}"; do
+      #       pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
+      #     done
+      # - name: Commit results
+      #   run: |
+      #     git config --local user.email "actions@github.com"
+      #     git config --local user.name "GitHub Actions"
+      #     git commit ${RMD_PATH[*]/.Rmd/.md} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
+      #     git push origin || echo "No changes to commit"
+      # - id: files
+      #   uses: jitterbit/get-changed-files@v1
+      # - run: |
+      #     mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
+      #     for added_modified_file in "${added_modified_files[@]}"; do
+      #       pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
+      #     done
+      # # - name: Produce pdfs
+      # #   run: |
+      # #     find . -iname '*.md' -type f -maxdepth 1 -exec sh -c 'pandoc -d _defaults.yml -M title=${0} ${0} -o ${0%.md}.pdf' {} \;
+      # # - name: Commit PDF Artifacts
+      # #   uses: stefanzweifel/git-auto-commit-action@v4
