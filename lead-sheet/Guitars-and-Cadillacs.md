@@ -1,4 +1,4 @@
-# Guitars-and-Cadillacs  
+# Guitars and Cadillacs  
   
 ### Intro  
   

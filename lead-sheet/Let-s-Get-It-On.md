@@ -1,34 +1,38 @@
-# Let s Get It On
-
+# Let's Get It On
 
 ### Verse (Ellen)  8x
+
 I've been really tryin', baby  
 Tryin' to hold back this feeling for so long  
 And if you feel like I feel, baby  
 Then, c'mon, oh, c'mon, woo  
 
 ### Chorus (Ellen, Dave)  8x
+
 (Let's get it on) Ah, baby
 (Let's get it on) Let's love, baby  
 (Let's get it on) Sugar  
-(Let's get it on) woo hoo hoo    
+(Let's get it on) woo hoo hoo
 
 ### Verse (Kyle)  8x
+
 We're all sensitive people  
 With so much to give  
 Understand me, sugar  
 Since we've got to be here  
-Let's live .. I love you 
+Let's live .. I love you
 
 ### Verse (harmony)  8x
+
 There's nothing wrong with me  
 Loving you, baby no no  
 And .. giving yourself to me  
 can never be wrong  
-If the love is true 
+If the love is true
 oh baby .. wooo ooo
 
 ### Bridge  8x
+
 (Ellen)
 Don't you know how sweet and wonderful
 life can be .. woo oo
@@ -45,6 +49,7 @@ So c'mon, c'mon, c'mon, c'mon, c'mon, baby
 Stop beatin' 'round the bush, heyah  
 
 ### Chorus (Ellen, Dave)  8x
+
 (Let's get it on)  
 (Let's get it on)  
 You know what I'm talkin' 'bout  
@@ -53,16 +58,18 @@ Let your love come out
 If you believe in love  
 
 ### Chorus (Ellen, Dave)  8x
+
 (Let's get it on, ooo) oooh ooh  
 (Let's get it on) baby  
 This minute, oh yeah  
 (Let's get it on)  
-Pleaseeeeee, 
+Pleaseeeeee,
 Please get it on  
 
 ### Bridge  8x
 
 ### Chorus (Ellen, Dave)  16x+
+
 Oh, gonna get it on  
 Threaten' you, baby, I wanna get it on  
 You don't have to worry that it's wrong  
@@ -74,10 +81,9 @@ Oh, get it on
 C'mon, baby  
 Do you know the meaning?  
 I've been sanctified .. ahhey  
-Girl, you give me good feeling, so good girl 
+Girl, you give me good feeling, so good girl
 I've been sanctified, oh do right baby
 
 Nothing wrong with love, if you want the loving
 Just let yourself go ... Ah baby  
 Let's get it on  
-

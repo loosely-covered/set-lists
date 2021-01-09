@@ -1,4 +1,4 @@
-# Beer Drinkers n Hell Raisers  
+# Beer Drinkers n Hell Raisers {short="Beer Drinkers"}  
   
 If you see me walkin' down the line  
 With my fav'rite honky tonk in mind  

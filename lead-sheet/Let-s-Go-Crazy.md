@@ -1,4 +1,4 @@
-# Let s Go Crazy
+# Let's Go Crazy
 
 Dearly beloved, we have gathered here today  
 To get through this thing called life  

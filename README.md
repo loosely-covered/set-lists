@@ -71,7 +71,7 @@ All lead sheets are basically plain text.  The only requirements are having:
 
 However, a Lead Sheet is more useful with a little structure.  Take a look at the top of the Lead Sheet for [Rebel Yell](./Rebel-Yell.md).
 
-```
+```markdown
 # Rebel Yell
 
 https://www.youtube.com/watch?v=m0JImKXjtaA  
@@ -92,6 +92,7 @@ pray help from above, because
 
 The following structure has been added to the plain-text lyrics:
 
+- Shorten long song names like so: `# All These Things That I ve Done {short="All These Things"}`.
 - Bonus points!  Add a web link to an online version close to how we do it.
 - Section headings, like "Intro" and "Verse", have been added using the "### " symbols.  These break the song up into its major parts.
 - You  can add the number of bars in each section (e.g., "16x").
@@ -104,7 +105,7 @@ To add this kind of structure to a Lead Sheet, do the following:
 1. Click on the name of the Lead Sheet in the `lead-sheet` folder of the repo.
 2. Find the "pencil" icon ("Edit this file") on the right side of the page above the lyrics.
 3. Make the desired changes to the structure of the song.
-5. Click the green "Commit changes" button at the bottom of the page to save.
-6. The edited lead sheet now will appear in the `lead-sheet` folder of the repo.
+4. Click the green "Commit changes" button at the bottom of the page to save.
+5. The edited lead sheet now will appear in the `lead-sheet` folder of the repo.
 
 If using VSCode locally, run `lyrics-finder "Sublime" "What I Got" | awk '{print $0 "  ";next}1' > ./lead-sheet/What-I-Got.md`

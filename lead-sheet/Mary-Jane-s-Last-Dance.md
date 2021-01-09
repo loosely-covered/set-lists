@@ -1,4 +1,4 @@
-# Mary Jane s Last Dance
+# Mary Jane's Last Dance
 
 She grew up in an Indiana town  
 Had a good lookin' mama who never was around.  

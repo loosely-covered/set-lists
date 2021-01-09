@@ -1,4 +1,4 @@
-# This Is How You Remind Me
+# This Is How You Remind Me {short="This ... Remind Me"}  
 
 Never made it as a wise man  
 I couldn't cut it as a poor man stealin'  

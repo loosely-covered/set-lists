@@ -1,4 +1,4 @@
-# When I m Gone
+# When I'm Gone
 
 There's another world inside of me that you may never see  
 There's secrets in this life that I can't hide  

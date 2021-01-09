@@ -1,5 +1,5 @@
-# Nothing Compares 2 U  
-  
+# Nothing Compares 2 U {short="Nothing Compares"}  
+
 ### Intro  8x  
   
 ### Verse  16x  

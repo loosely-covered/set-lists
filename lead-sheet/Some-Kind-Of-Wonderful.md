@@ -1,4 +1,4 @@
-# Some Kind Of Wonderful
+# Some Kind Of Wonderful {short="Some Kind of W'full"}  
 
 I don't need a whole lots of money  
 I don't need a big fine car  

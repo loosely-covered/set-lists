@@ -1,4 +1,4 @@
-# You Shook Me All Night Long
+# You Shook Me All Night Long {short="You Shook Me"}  
 
 ### Intro  8x
 

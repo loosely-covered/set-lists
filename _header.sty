@@ -1,4 +1,5 @@
 \usepackage[fontsize=14pt]{scrextend}
+% \setmainfont[]{Charter}
 \usepackage[sfdefault]{FiraSans}
 \usepackage{FiraMono}
 \usepackage{geometry}
@@ -22,14 +23,16 @@
 \addtocontents{toc}{\protect\hypertarget{toc}{}}
 \setcounter{secnumdepth}{1}
 \usepackage[compact]{titlesec}
+\titlespacing*{\title}        {0em}{1em}{.75em}
 \titlespacing*{\section}      {0em}{.75em}{.5em}
 \titlespacing*{\subsection}   {0em}{.50em}{.25em}
 \titlespacing*{\subsubsection}{0em}{.15em}{0em}
 \let\oldsection\section
 \renewcommand\section{\clearpage\oldsection}
 \usepackage{tocloft}
+\cftpagenumbersoff{section}
 \renewcommand\cftsecfont{\LARGE}
-\renewcommand\cftsecpagefont{\LARGE}
+% \renewcommand\cftsecpagefont{\LARGE}
 \setlength\cftparskip{-11pt}
 % \setlength\cftparskip{-12pt}
 \usepackage{hyperref}

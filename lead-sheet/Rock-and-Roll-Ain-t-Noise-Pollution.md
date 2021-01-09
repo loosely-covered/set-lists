@@ -1,4 +1,4 @@
-# Rock n Roll Ain t Noise Pollution
+# Rock n Roll Ain t Noise Pollution {short="Rock ... Pollution"}  
 
 Hey there, all you middlemen
 Throw away your fancy clothes

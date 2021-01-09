@@ -1,4 +1,4 @@
-# Are You Gonna Be My Girl
+# Are You Gonna Be My Girl {short="Are U Be My Girl"}  
 
 Go!  
 It's one, two, three  

@@ -1,4 +1,4 @@
-# Hit Me With Your Best Shot
+# Hit Me With Your Best Shot {short="Hit Me ... Best Shot"}  
 
 Well you're the real tough cookie with a long history  
 Of breaking little hearts, like the one in me  

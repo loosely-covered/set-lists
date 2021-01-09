@@ -1,9 +1,9 @@
-# Where the Streets Have No Names
-
+# Where the Streets Have No Names {short="Where the Streets"}  
 
 ### (lots of stuff)  
 
 ### Verse 1  12x
+
 I wanna run  
 I want to hide  
 I want to tear down the walls  
@@ -12,9 +12,11 @@ I want to reach out
 and touch the flame
 
 ### Guitar Vamp  4x
+
 Where the streets have no name
 
 ### Verse 2  12x
+
 I want to feel  
 sunlight on my face  
 I see the dust cloud disappear  
@@ -23,10 +25,12 @@ I want to take shelter
 from the poison rain  
 
 ### Guitar Vamp  4x
+
 Where the streets have no name  
 Oh hoh
 
 ### Chorus  12x
+
 Where the streets have no name  
 Where the streets have no name  
 We're still building and  
@@ -39,19 +43,22 @@ It's all I can do
 ### Guitar Vamp  4x
 
 ### Verse 3  12x
+
 The city's a flood  
 and our love turns to rust  
-We're beaten and   
+We're beaten and
 blown by the wind  
 trampled in dust  
 I'll show you a place  
 high on a desert plain  
 
 ### Guitar Vamp  4x
+
 Where the streets have no name  
 Ah hah
 
 ### Chorus  12x
+
 Where the streets have no name  
 Where the streets have no name  
 We're still building and  
@@ -62,6 +69,7 @@ I go there with you
 It's alllll I can do  
 
 ### Chorus (outro vamp)  20x
+
 Our love turns to rust  
 We're beaten and  
 blown by the wind  
@@ -76,4 +84,3 @@ I go there with you
 It's all I can do  
 
 ### Outro
-

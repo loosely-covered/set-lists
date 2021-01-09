@@ -1,4 +1,4 @@
-# That s The Way I Like It
+# That's The Way I Like It {short="That's The Way"}  
 
 Oh, that's the way, uhh huh, uhh huh  
 I like it, uhh huh, uhh huh  

@@ -1,4 +1,4 @@
-# Bang a Gong Get It On
+# Bang a Gong Get It On {short="Bang a Gong"}  
 
 Well you're dirty and sweet, clad in black  
 don't look back and I love you  

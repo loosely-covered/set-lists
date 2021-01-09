@@ -1,4 +1,4 @@
-# My Own Worst Enemy
+# My Own Worst Enemy {short="Own Worst Enemy"}  
 
 Can we forget about the things I said  
 When I was drunk?  

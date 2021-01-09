@@ -1,4 +1,4 @@
-# I m Bad I m Nationwide
+# I'm Bad I'm Nationwide {short="I'm Nationwide"}  
 
 Well I was rollin' down the road in some cold blue steel
 I had a blues man in the back, and a beautician at the wheel
