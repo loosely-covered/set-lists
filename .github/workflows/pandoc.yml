@@ -22,6 +22,10 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.7"
+
       - name: Update Master Set List
         run: |
           ls ./lead-sheet/*.md | awk '{print $0 ",  ";next}1' > Master-Set-List.csv
