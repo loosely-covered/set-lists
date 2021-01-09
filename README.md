@@ -1,6 +1,6 @@
 # Loosely Covered - Set Lists
 
-TODO automatically build updated Master Set List when there are any changes
+TODO automatically build new/changed Set Lists
 
 ## Overview
 

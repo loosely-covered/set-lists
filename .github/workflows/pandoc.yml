@@ -24,7 +24,12 @@ jobs:
 
       - name: Update Master Set List
         run: |
+          ls ./lead-sheet/*.md | awk '{print $0 ",  ";next}1' > Master-Set-List.csv
           pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"
+
+      - uses: EndBug/add-and-commit@v6
+        with:
+          add: ["*.csv --force", "*.pdf --force"]
 
       - name: Set datetime variable
         run: echo "NOW=$(date +'%Y-%m-%d.%H%M%S')" >> $GITHUB_ENV
