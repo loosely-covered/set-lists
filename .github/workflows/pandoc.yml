@@ -25,6 +25,31 @@ jobs:
       - name: Update Master Set List
         run: |
           pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"
+
+      - name: Set datetime variable
+        run: echo "NOW=$(date +'%Y-%m-%d.%H%M%S')" >> $GITHUB_ENV
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: Tag-${{ env.NOW }}
+          release_name: v${{ env.NOW }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./Master-Set-List.pdf
+          asset_name: Master-Set-List-${{ env.NOW }}.pdf
+          asset_content_type: application/pdf
       # - name: Render changed Markdown files
       #   run: |
       #     MD_PATH=($(git diff-tree --no-commit-id --name-only -r HEAD | grep '[.]md$'))
