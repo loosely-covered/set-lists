@@ -1,4 +1,0 @@
-./lead-sheet/Amber.md
-./lead-sheet/Black.md
-./lead-sheet/Back-In-Black.md
-./lead-sheet/Born-To-Run.md

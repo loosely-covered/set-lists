@@ -27,6 +27,10 @@ For a new Set List, you should create a **new file** specific to that gig using 
 5. Wait a few minutes, then the PDF file for the new Set List will appear in the repo.
 6. Double-click to download and open the PDF file.
 
+`wget -qO - "https://docs.google.com/spreadsheets/d/1taBIDL661FEPgLM9siWrYPdy0aWgPgDwZXIBXYNmgXM/export?format=csv&gid=571432328" | awk '{if (NR!=1) {print}}'| cut -d, -f1 | awk '{print "./lead-sheet/"$0}' | awk '{print $0 ".md";next}1' > "2021-01-08-Murphys.txt"`
+
+`cat 2021-01-08-Murphys.txt | awk '{print $0 ",";next}1' > "2021-01-08-Murphys.csv"`
+
 ## How Each Set List Gets Built
 
 All content is written in Markdown for ease-of-use.
@@ -35,7 +39,8 @@ This repo uses the command-line tool [`pandoc`](https://pandoc.org) to combine a
 
 Once you commit your changes to any edited file(s), this repo uses GitHub Actions to produce the PDF file behind the scenes using `pandoc`.  In effect, GitHub Actions runs the following command:
 
-`pandoc -d _defaults.yml -M title='Murphys 2020-01-08' $(cat 2020-01-08-Murphys.txt) -o 2020-01-08-Murphys.pdf`
+`pandoc -d _defaults.yml -M title='Murphys 2021-01-08' $(cat 2021-01-08-Murphys.txt) -o 2021-01-08-Murphys.pdf`
+`cat 2021-01-08-Murphys.txt | awk '{print $0 ",";next}1' > "2021-01-08-Murphys.csv"`
 
 for each Set List.  **Please be patient**; it may take a few minutes for the Set List PDF to get generated.
 
