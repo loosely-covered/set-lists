@@ -3,7 +3,7 @@ to: pdf
 standalone: true
 self-contained: true
 filters:
-  - short-title-for-toc.py
+  - ./short-title-for-toc.py
 pdf-engine: xelatex
 include-in-header: [_header.sty]
 table-of-contents: true
