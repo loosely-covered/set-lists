@@ -1,0 +1,6 @@
+./lead-sheet/Black.md
+./lead-sheet/Californication.md
+./lead-sheet/Cumbersome.md
+./lead-sheet/Elderly-Woman.md
+./lead-sheet/Everlong.md
+./lead-sheet/Folsom-Prison-Blues.md
