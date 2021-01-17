@@ -2,6 +2,9 @@
 
 TODO automatically build new/changed Set Lists
 
+Google token ???
+4/1AY0e-g4W9yEHyo9xzQ1q8Jd2aTJH0idNeunCY61Epe01DsWsTDXWekZGzDo
+
 ## Overview
 
 This repository contains the Set Lists for our gigs.
