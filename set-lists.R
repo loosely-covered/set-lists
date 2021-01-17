@@ -36,17 +36,18 @@ get_set_list <- function(name) {
 # loop over list of sheet names to create text files
 pwalk( list(set_lists_properties$name), get_set_list)
 
-
-if (is.null(unlist(status()))) {
-  return (writeLines(paste0("There is nothing to do.")))
-}
+# if (is.null(unlist(status()))) {stop("No unchanged files") }
+#   
+#   
+# if (  )
+#   return (writeLines(paste0("There is nothing to do.")))
 
 # add, commit. and push new text files to GitHub
-set_list_repo <- repository()
-pull(set_list_repo)
-add(set_list_repo, "*.txt")
-try(commit(set_list_repo,
-           message = paste0("GH Actions update",
-                            Sys.time(), "%Y-%m-%d %H:%M:%S") ))
-push(set_list_repo,
-     credentials = cred_token(token = "GITHUB_PAT") )
+# set_list_repo <- repository()
+# pull(set_list_repo)
+# add(set_list_repo, "*.txt")
+# commit(set_list_repo,
+#        message = paste0("GH Actions update",
+#                         Sys.time(), "%Y-%m-%d %H:%M:%S") )
+# push(set_list_repo,
+#      credentials = cred_token(token = "GITHUB_PAT") )
