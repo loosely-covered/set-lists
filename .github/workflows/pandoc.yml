@@ -5,24 +5,30 @@ on: push
 jobs:
   create_set_list_pdfs:
     runs-on: ubuntu-20.04
-    container:
-      image: docker://rocker/verse:4.0.3
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
+    
+    - uses: r-lib/actions/setup-r@v1
+    - uses: r-lib/actions/setup-pandoc@v1
+      with:
+        pandoc-version: '2.11.3'
+    - uses: r-lib/actions/setup-tinytex@v1
+    
     - name: Get repo
       uses: actions/checkout@v2
       with:
         fetch-depth: 2
     - name: Cache packages
-      uses: actions/cache@v1
+      uses: actions/cache@v2
       with:
         path: ${{ env.RENV_PATHS_ROOT }}
         key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
         restore-keys: |
           ${{ runner.os }}-renv-
-    - name: Restore packages
+
+    - name: Restore R packages
       shell: Rscript {0}
       run: |
         if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
@@ -31,13 +37,12 @@ jobs:
       run: |
         tlmgr update --self
         tlmgr install koma-script geometry fira lastpage fancyhdr titlesec tocloft hyperref
-    - uses: r-lib/actions/setup-pandoc@v1
-      with:
-        pandoc-version: '2.11.3'
+
     - name: Update Master Set List text file and Create associated PDF
       run: |
         ls ./lead-sheet/*.md | awk '{print $0 "  ";next}1' > Master-Set-List.txt
         pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"
+
     - name: Create text files for other Set Lists
       run: Rscript set-lists.R
     - name: Render text files
@@ -45,7 +50,8 @@ jobs:
         for f in *.txt; do
           pandoc -d _defaults.yml -M title="${f} $(date +%F)" ${f} -o ${f}.pdf
         done
-    - name: Commit changes
+
+    - name: Commit all txt file and PDF changes
       uses: EndBug/add-and-commit@v7
       with:
         author_name: GitHub Actions
