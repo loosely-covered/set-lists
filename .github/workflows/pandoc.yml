@@ -32,6 +32,8 @@ jobs:
         tlmgr update --self
         tlmgr install koma-script geometry fira lastpage fancyhdr titlesec tocloft hyperref
     - uses: r-lib/actions/setup-pandoc@v1
+      with:
+        pandoc-version: '2.11.3'
     - name: Update Master Set List text file and Create associated PDF
       run: |
         ls ./lead-sheet/*.md | awk '{print $0 "  ";next}1' > Master-Set-List.txt
