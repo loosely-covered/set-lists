@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-20.04
     container:
       image: docker://rocker/verse:4.0.3
-      options: --entrypoint=sh
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       RENV_PATHS_ROOT: ~/.local/share/renv
@@ -36,7 +35,7 @@ jobs:
       run: |
         ls ./lead-sheet/*.md | awk '{print $0 "  ";next}1' > Master-Set-List.txt
         pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"
-    - name: Create text files for all other Set Lists
+    - name: Create text files for other Set Lists
       run: Rscript set-lists.R
     - name: Render text files
       run: |
