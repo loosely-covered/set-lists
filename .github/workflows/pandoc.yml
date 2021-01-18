@@ -9,14 +9,18 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
-    - name: Install package
+    - name: Install Ubuntu packages
       run: |
         sudo apt-get -y install libcurl4-openssl-dev
-    - uses: r-lib/actions/setup-r@v1
-    - run: |
+        pip install pandocfilters
+    - name: Install R
+      uses: r-lib/actions/setup-r@v1
+    - name: Install up-to-date Pandoc
+      run: |
         wget https://github.com/jgm/pandoc/releases/download/2.11.3.2/pandoc-2.11.3.2-1-amd64.deb
         sudo dpkg -i pandoc-2.11.3.2-1-amd64.deb
-    - uses: r-lib/actions/setup-tinytex@v1
+    - name: Install setup-tinytex
+      uses: r-lib/actions/setup-tinytex@v1
     
     - name: Get repo
       uses: actions/checkout@v2
