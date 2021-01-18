@@ -3,84 +3,140 @@ name: Make PDF
 on: push
 
 jobs:
-  convert_via_pandoc:
+  create_set_list_pdfs:
     runs-on: ubuntu-20.04
     container:
-      image: docker://pandoc/latex:2.10.1
+      image: docker://rocker/verse:4.0.3
       options: --entrypoint=sh
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      # add `--verify-repo-none` to tlmgr
-      - run: |
-          tlmgr update --self
-          tlmgr install koma-script geometry fira lastpage fancyhdr titlesec tocloft hyperref
+    - name: Get repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+    - name: Install R packages
+      run: |
+        install.packages("remotes")
+        remotes::install_local(".")
+        remotes::install_cran("rmarkdown", "tidyverse", "googlesheets4", "googledrive", "credentials", "git2r")
+      shell: Rscript {0}
+    - name: Install LaTeX packages
+      run: |
+        tlmgr update --self
+        tlmgr install koma-script geometry fira lastpage fancyhdr titlesec tocloft hyperref
+    - name: Update Master Set List text file and Create associated PDF
+      run: |
+        ls ./lead-sheet/*.md | awk '{print $0 "  ";next}1' > Master-Set-List.txt
+        pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"
+    - name: Create text files for all other Set Lists
+      run: Rscript set-lists.R
+    - name: Render text files
+      run: |
+        for f in *.txt; do
+          pandoc -d _defaults.yml -M title="${f} $(date +%F)" ${f} -o ${f}.pdf
+        done
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
+      with:
+        author_name: GitHub Actions
+        author_email: actions@github.com
+        message: 'Your commit message'
+        add: '["*.txt --force", "*.pdf --force"]'
 
-      - name: Checkout the repo
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
-
-      - uses: actions/setup-python@v2
-        with:
-          python-version: "3.7"
-
-      - name: Update Master Set List
-        run: |
-          ls ./lead-sheet/*.md | awk '{print $0 ",  ";next}1' > Master-Set-List.csv
-          pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"
-
-      - uses: EndBug/add-and-commit@v6
-        with:
-          add: '["*.csv --force", "*.pdf --force"]'
-
-      - name: Set datetime variable
-        run: echo "NOW=$(date +'%Y-%m-%d.%H%M%S')" >> $GITHUB_ENV
-
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: Tag-${{ env.NOW }}
-          release_name: v${{ env.NOW }}
-          draft: false
-          prerelease: false
-
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-          asset_path: ./Master-Set-List.pdf
-          asset_name: Master-Set-List-${{ env.NOW }}.pdf
-          asset_content_type: application/pdf
-      # - name: Render changed Markdown files
-      #   run: |
-      #     MD_PATH=($(git diff-tree --no-commit-id --name-only -r HEAD | grep '[.]md$'))
-      #     for (file in commandArgs(TRUE)) rmarkdown::render(file)' ${RMD_PATH[*]}
-      #     for added_modified_file in "${added_modified_files[@]}"; do
-      #       pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
-      #     done
-      # - name: Commit results
-      #   run: |
-      #     git config --local user.email "actions@github.com"
-      #     git config --local user.name "GitHub Actions"
-      #     git commit ${RMD_PATH[*]/.Rmd/.md} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
-      #     git push origin || echo "No changes to commit"
-      # - id: files
-      #   uses: jitterbit/get-changed-files@v1
-      # - run: |
-      #     mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
-      #     for added_modified_file in "${added_modified_files[@]}"; do
-      #       pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
-      #     done
-      # # - name: Produce pdfs
-      # #   run: |
-      # #     find . -iname '*.md' -type f -maxdepth 1 -exec sh -c 'pandoc -d _defaults.yml -M title=${0} ${0} -o ${0%.md}.pdf' {} \;
-      # # - name: Commit PDF Artifacts
-      # #   uses: stefanzweifel/git-auto-commit-action@v4
+# 
+#     - name: Commit results
+#       run: |
+#         git config --local user.email "actions@github.com"
+#         git config --local user.name "GitHub Actions"
+#         git commit ${TXT_PATH[*]/.Rmd/.md} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
+#         git push origin || echo "No changes to commit"
+# 
+# 
+# 
+# 
+# jobs:
+#   convert_via_pandoc:
+#     runs-on: ubuntu-20.04
+#     container:
+#       image: docker://pandoc/latex:2.10.1
+#       options: --entrypoint=sh
+#     env:
+#       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+#     steps:
+#       # add `--verify-repo-none` to tlmgr
+#       - run: |
+#           tlmgr update --self
+#           tlmgr install koma-script geometry fira lastpage fancyhdr titlesec tocloft hyperref
+# 
+#       - name: Checkout the repo
+#         uses: actions/checkout@v2
+#         with:
+#           ref: ${{ github.head_ref }}
+#           fetch-depth: 0
+# 
+#       - aame: Setup Python
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: "3.7"
+#  
+#       - name: Setup R
+#               uses: r-lib/actions/setup-r@v1
+#               with:
+#                 r-version: ${{ matrix.R }}
+#             - run: Rscript -e 'print("hello")'
+#  
+# 
+#       - uses: EndBug/add-and-commit@v6
+#         with:
+#           add: '["*.csv --force", "*.pdf --force"]'
+# 
+#       - name: Set datetime variable
+#         run: echo "NOW=$(date +'%Y-%m-%d.%H%M%S')" >> $GITHUB_ENV
+# 
+#       - name: Create Release
+#         id: create_release
+#         uses: actions/create-release@v1
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         with:
+#           tag_name: Tag-${{ env.NOW }}
+#           release_name: v${{ env.NOW }}
+#           draft: false
+#           prerelease: false
+# 
+#       - name: Upload Release Asset
+#         id: upload-release-asset
+#         uses: actions/upload-release-asset@v1
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         with:
+#           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+#           asset_path: ./Master-Set-List.pdf
+#           asset_name: Master-Set-List-${{ env.NOW }}.pdf
+#           asset_content_type: application/pdf
+#       # - name: Render changed Markdown files
+#       #   run: |
+#       #     MD_PATH=($(git diff-tree --no-commit-id --name-only -r HEAD | grep '[.]md$'))
+#       #     for (file in commandArgs(TRUE)) rmarkdown::render(file)' ${RMD_PATH[*]}
+#       #     for added_modified_file in "${added_modified_files[@]}"; do
+#       #       pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
+#       #     done
+#       # - name: Commit results
+#       #   run: |
+#       #     git config --local user.email "actions@github.com"
+#       #     git config --local user.name "GitHub Actions"
+#       #     git commit ${RMD_PATH[*]/.Rmd/.md} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
+#       #     git push origin || echo "No changes to commit"
+#       # - id: files
+#       #   uses: jitterbit/get-changed-files@v1
+#       # - run: |
+#       #     mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
+#       #     for added_modified_file in "${added_modified_files[@]}"; do
+#       #       pandoc -d _defaults.yml -M title=${added_modified_file} ${added_modified_file} -o ${added_modified_file}.pdf
+#       #     done
+#       # # - name: Produce pdfs
+#       # #   run: |
+#       # #     find . -iname '*.md' -type f -maxdepth 1 -exec sh -c 'pandoc -d _defaults.yml -M title=${0} ${0} -o ${0%.md}.pdf' {} \;
+#       # # - name: Commit PDF Artifacts
+#       # #   uses: stefanzweifel/git-auto-commit-action@v4

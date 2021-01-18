@@ -1,7 +1,6 @@
 # R script to
-# 1) read Set Lists from Google Sheets,
-# 2) write Set Lists as text files, and
-# 3) commit Set List text files to GitHub.
+# 1) read Set Lists from Google Sheets, and
+# 2) write Set Lists as text files.
 library(rmarkdown)
 library(tidyverse)
 library(googlesheets4)

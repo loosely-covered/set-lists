@@ -1,4 +1,0 @@
-./lead-sheet/Black.md
-./lead-sheet/Californication.md
-./lead-sheet/Cumbersome.md
-./lead-sheet/Elderly-Woman.md
