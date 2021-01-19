@@ -3,10 +3,15 @@
 # 2) write Set Lists as text files.
 library(rmarkdown)
 library(tidyverse)
-library(googlesheets4)
 library(googledrive)
+library(googlesheets4)
 library(credentials)
 library(git2r)
+
+# Authenticate using json token to Google Drive, then Google Sheets
+drive_auth(email = "kylelundstedt@gmail.com",
+           path = "./client_secret_1050655822076-65hn5nql4rsa6ln15q6o4imegudhdgs8.apps.googleusercontent.com.json")
+gs4_auth(token = drive_token())
 
 # connect to Set List maintained as Google Sheet
 set_lists <- drive_get("Loosely-Covered-2021")
