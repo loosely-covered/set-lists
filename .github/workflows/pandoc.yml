@@ -46,7 +46,7 @@ jobs:
 
     - name: Update Master Set List text file and Create associated PDF
       run: |
-        ls ./lead-sheet/*.md | awk '{print $0 "  ";next}1' > Master-Set-List.txt
+        ls ./lead-sheet/*.md | awk '{print $0 ",  ";next}1' > Master-Set-List.csv
         pandoc -d _defaults.yml -M title="Master Set List $(date +%F)" ./lead-sheet/*.md  -o "Master-Set-List.pdf"
 
     - name: Create text files for other Set Lists
@@ -63,7 +63,7 @@ jobs:
         author_name: GitHub Actions
         author_email: actions@github.com
         message: 'Your commit message'
-        add: '["*.txt --force", "*.pdf --force"]'
+        add: '["*.csv --force", "*.txt --force", "*.pdf --force"]'
 
 # 
 #     - name: Commit results
