@@ -1,6 +1,7 @@
 # R script to
-# 1) read Set Lists from Google Sheets, and
-# 2) write Set Lists as text files.
+# 1) manage Set Lists on Google Sheets,
+# 2) write Set Lists as text files to GitHub, and
+# 3) allow GitHub Actions to create PDFs from those text files.
 library(rmarkdown)
 library(tidyverse)
 library(googledrive)
@@ -9,11 +10,12 @@ library(credentials)
 library(git2r)
 
 # Authenticate using json token to Google Drive, then Google Sheets
+# Needs GOOGLE_API_KEY env variable set equal to `client_secret...` file
 drive_auth(email = "kylelundstedt@gmail.com",
-           path = "./client_secret_1050655822076-65hn5nql4rsa6ln15q6o4imegudhdgs8.apps.googleusercontent.com.json")
+           path = Sys.getenv("GOOGLE_API_KEY"))
 gs4_auth(token = drive_token())
 
-# connect to Set List maintained as Google Sheet
+# connect to Set Lists maintained as Google Sheet
 set_lists <- drive_get("Loosely-Covered-2021")
 
 # create list of sheet names in R for which to create set lists
@@ -39,19 +41,3 @@ get_set_list <- function(name) {
 
 # loop over list of sheet names to create text files
 pwalk( list(set_lists_properties$name), get_set_list)
-
-# if (is.null(unlist(status()))) {stop("No unchanged files") }
-#   
-#   
-# if (  )
-#   return (writeLines(paste0("There is nothing to do.")))
-
-# add, commit. and push new text files to GitHub
-# set_list_repo <- repository()
-# pull(set_list_repo)
-# add(set_list_repo, "*.txt")
-# commit(set_list_repo,
-#        message = paste0("GH Actions update",
-#                         Sys.time(), "%Y-%m-%d %H:%M:%S") )
-# push(set_list_repo,
-#      credentials = cred_token(token = "GITHUB_PAT") )

@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
       RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
     - name: Install Ubuntu packages
@@ -51,6 +52,7 @@ jobs:
 
     - name: Create text files for other Set Lists
       run: Rscript set-lists.R
+
     - name: Render text files
       run: |
         for f in *.txt; do
