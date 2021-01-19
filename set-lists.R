@@ -12,7 +12,7 @@ library(git2r)
 # Authenticate using json token to Google Drive, then Google Sheets
 # Needs GOOGLE_API_KEY env variable set equal to `client_secret...` file
 drive_auth(email = "kylelundstedt@gmail.com",
-           path = Sys.getenv("GOOGLE_API_KEY"))
+           path = Sys.getenv("GOOGLE_KEY"))
 gs4_auth(token = drive_token())
 
 # connect to Set Lists maintained as Google Sheet
