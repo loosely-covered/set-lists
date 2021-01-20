@@ -1,20 +1,20 @@
 # Thank You  
   
-### Guitar Vamp  4x
+### Guitar Vamp  8x
   
-### Verse  
+### Verse  8x  
 
 If the sun refused to shine,  
 I would still be loving you.  
 When mountains crumble to the sea,  
 There will still be you and me.  
   
-### Pre-chorus  
+### Pre-chorus  4x  
 
 Kind woman, I give you my all.  
 Kind woman, nothing more.  
   
-### Chorus  
+### Chorus  8x  
 
 Little drops of rain  
 Whisper of the pain.  
@@ -24,9 +24,7 @@ My love is strong,
 With you there is no wrong.  
 Together we shall go until we die.  
   
-My, my, my.  
-  
-### Pre-chorus  
+### Pre-chorus  4x  
 
 An inspiration's what you are to me.  
 Inspiration, look, see.  
@@ -35,22 +33,42 @@ Inspiration, look, see.
   
 ### Guitar Solo  
   
-### Verse  
+### Verse  8x  
 
 And so today my world — it smiles,  
 Your hand in mine, we walk the miles,  
+
 Thanks to you it will be done,  
-For you to me are the only one.  
-.. Alright, yeah  
+For you to me are the only one.   
   
-### Pre-chorus  
+### Pre-chorus  4x   
 
 Happiness: no more be sad,  
 Happiness: I'm glad.  
+
+### Chorus  8x  
+
+### Pre-chorus  4x  
+
+An inspiration's what you are to me.  
+Inspiration, look, see.
   
-### Verse  
+### Verse  8x  
 
 If the sun refused to shine,  
 I would still be loving you.  
 Mountains crumble to the sea,  
 There will still be you and me.  
+
+### Guitar Vamp  8x
+
+### Verse  8x  
+
+If the sun refused to shine,  
+I would still be loving you.  
+When mountains crumble to the sea,  
+There will still be you and me.  
+
+### Verse  8x  
+
+ooooo ...
