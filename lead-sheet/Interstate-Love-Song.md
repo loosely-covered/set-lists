@@ -24,7 +24,7 @@ Promises of what I seemed to be
 Only watch the time go by  
 All of these things you said to me  
 
-### Bridge  3x
+### Bridge  3x+3x
 
 ### Verse 3  4x
 Breathin', is the hardest thing to do  
