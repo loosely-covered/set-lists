@@ -37,7 +37,7 @@ But he's a fool
 Cause nothing compares  
 Nothing compares ... to you  
   
-### Guitar Solo  12x  
+### Guitar Solo  12x+1  
   
 ### Verse  8x  
 
