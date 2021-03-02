@@ -8,19 +8,24 @@
 ### Vamp  2x (8ths)  
 
 ### Verse 1  9x (8ths)  
-I am a one way motorway  
+I .. am a one way motorway  
 I'm the one that drives away  
 then follows you back home  
 
-I am a street light shining  
+I .. am a street light shining  
 I'm a wild light blinding bright  
 burning off alone  
 
 ### Chorus  11x (8ths)  
-it's times like these you learn to live again  
-it's times like these you give and give again  
-it's times like these you learn to love again  
-it's times like these time and time again  
+it's times like these  
+you learn to live again  
+it's times like these  
+you give and give again  
+
+it's times like these  
+you learn to love again  
+it's times like these  
+time and time again  
 
 ### Vamp  2x (8ths)  
 
@@ -35,10 +40,6 @@ and leave it all behind?
 ### Vamp  2x (8ths)  
 
 ### Chorus  11x (8ths)  
-it's times like these you learn to live again  
-it's times like these you give and give again  
-it's times like these you learn to love again  
-it's times like these time and time again
 
 ### Intro Vamp  12x (7ths)  
 

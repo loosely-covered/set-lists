@@ -51,16 +51,6 @@ Out of the dark that blinds you
   
 ### Prechorus  8x + 3x  
   
-Can you see just like a child?  
-Can you see just what I want?  
-Can I bring you back to life?  
-Are you scared of life?  
-  
 ### Chorus  8x  
-  
-Burn, burn, burn  
-Burn your wicked garden down  
-Burn, burn, burn  
-Burn your wicked garden to the ground  
   
 ### Outro Vamp  4x  

@@ -2,12 +2,12 @@
 
 ### Intro  5x
 
-### Verse  8x
+### Verse 1  8x
 
 Baby, here I am  
 I'm the man on the scene  
 I can give you what you want  
-But you gotta' come home with me  
+But you got ta' come home with me  
 
 I have got some good old lovin'  
 And I got some more in store  
@@ -19,12 +19,11 @@ You gotta' come back for more
 Boys and things that come by the dozen  
 That ain't nothin' but drugstore lovin'  
 Hey little thing, let me light your candle  
-'Cause Mama, I'm sure hard to handle  
-Now gets around  
+Cuz Mama, I'm hard to handle, now gets around  
 
 ### Break  2x
 
-### Verse  8x
+### Verse 2  8x
 
 Action speaks louder than words  
 And I'm a man of great experience  
@@ -36,25 +35,15 @@ I'm gonna prove every word I say
 I'm advertising love for free  
 So you can place your ad with me  
 
-### Chorus  4x
+### Chorus 2  4x
 
 (dime by the dozen; ten cent lovin')  
 
 ### Break  4x
 
-### Verse  8x
+### Verse 1  8x  
 
-Baby, here I am  
-I'm the man on your scene  
-I can give you what you want  
-But you gotta' come home with me  
-
-I have got some good old lovin'  
-And I got some more in store  
-When I get through throwin' it on you  
-You gotta' come runnin' back for more  
-
-### Chorus  4x  
+### Chorus 1  4x  
 
 ### Break  4x
 

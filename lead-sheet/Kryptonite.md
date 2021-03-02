@@ -34,31 +34,17 @@ You took for granted all the times I never let you down
 You stumbled in and bumped your head, if not for me then you'd be dead  
 I picked you up and put you back on solid ground  
 
-### Chorus  8x
-If I go crazy then will you still call me Superman?  
-If I'm alive and well, will you be there a holding my hand?  
-I'll keep you by my side with my superhuman might  
-Kryptonite  
-No no no no no no no, no no no no no no no  
+### Chorus  8x  
 
 ### Guitar Solo  8x
 
 ### Groove  4x
 
-### Chorus (Intro Groove)  8x
-If I go crazy then will you still call me Superman?  
-If I'm alive and well, will you be there a holding my hand?  
-I'll keep you by my side with my superhuman might  
-Kryptonite  
+### Chorus (Intro Groove)  8x  
+..  
 Yeah!  
 
-### Chorus  8x
-If I go crazy then will you still call me Superman?  
-If I'm alive and well, will you be there a holding my hand?  
-I'll keep you by my side with my superhuman might  
-Kryptonite  
+### Chorus  8x 
 
 ### Groove  8x
-Ho, woh, woh  
-Ho, woh, woh  
-Ho, woh, woh
+Ho, woh, woh (x3)

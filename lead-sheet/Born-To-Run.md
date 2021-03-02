@@ -17,13 +17,11 @@ Oh, baby, this town rips the bones from your back
 It's a death trap, it's a suicide rap  
   
 We gotta get out while we're young  
-'Cause tramps like us  
-Baby, we were born to-  
+'Cause tramps like us .. Baby, we were born to-  
   
 ### Intro Vamp  8x  
 
--runnnnnnnnnn  
-...  Yes, girl, we were  ...  
+-runnnnnnnnnn ... Yes, girl, we were ...  
   
 ### Verse  8x  
 
@@ -45,8 +43,7 @@ Babe, I want to know if love is-
   
 ### Intro Vamp  8x  
 
--realllllllllll  
-...  Oh, can you show me?  ...  
+-realllllllllll ... Oh, can you show me? ..   
   
 ### Sax Solo  12x  
   

@@ -1,6 +1,5 @@
 # Kiss
 
-
 ### Intro  4x
 
 ### Verse  16x
@@ -15,15 +14,11 @@ You just leave it all up to me
 I'm gonna show you what it's all about  
 
 ### Chorus  8x
-You don't have to be rich  
-to be my girl  
-You don't have to be cool  
-to rule my world  
+You don't have to be rich .. to be my girl  
+You don't have to be cool .. to rule my world  
 
-Ain't no particular sign  
-I'm more compatible with  
-I just want your extra time  
-and your .. kiss  
+Ain't no particular sign I'm more compatible with  
+I just want your extra time and your .. kiss  
 
 ### Break  4x
 

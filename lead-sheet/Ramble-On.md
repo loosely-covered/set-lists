@@ -2,18 +2,17 @@
 
 ### Intro  6x
 
-### Verse 1  16x
+### Verse  16x
 
-Leaves are falling all around  
+Leaves are falling all around,  
 It's time I was on my way  
-Thanks to you I'm much obliged  
-Such a pleasant stay  
+Thanks to you I'm much obliged,  
+for such a pleasant stay  
 
-But now it's time for me to go  
-The autum moon lights my way.  
-and now I smell the rain  
-and and with it pain  
-and it's headed my way
+But now it's time for me to go,  
+the autumn moon lights my way.  
+and now I smell the rain,  
+and with it pain, and it's headed my way  
 
 ### Pre chorus  4x
 
@@ -22,36 +21,30 @@ but I know I got one thing I got to do
 
 ### Chorus 8x
 
-Ramble on  
-well nows the time the time is now  
-sing my song  
-I'm go'in around the world  
-I got to find my girl, I'm on my way  
-I've been this way 10 years to the day  
-I'm gonna ramble on  
-I'm gonna find the queen of all my dreams  
+Ramble on!  Well now's the time, the time is now  
+sing my song .. I'm go'in around the world, I got to find my girl
+
+I'm on my way! I been this way 10 years to the day  
+I'm gonna ramble on .. I'm gonna find the queen of all my dreams  
 
 ### Verse 2
 
-Got no time for spreadin' roots  
+Got no time for spreadin' roots,  
 The time has come to be gone  
-And to our health
-we drank a thousand times
+And to our health, we drank a thousand times  
 It's time to ramble on ...
 
 ### Chorus  8x
 
 ### Guitar Solo  4x
 
-Mine's a the tale that can't be told  
-My freedom I hold dear  
-How years ago .. In days of old  
-The magic filled the air  
+### Verse  16x  
 
-Just in the darkest steps of Mordor  
-I met a girl so fair  
-But Gollum and the Evil one  
-crept up and slipped away with her  
+Mine's a the tale that can't be told, My freedom I hold dear  
+How years ago .. In days of old, The magic filled the air  
+
+Twas in the darkest depths of Mordor, I met a girl so fair  
+But Gollum and the Evil one crept up and slipped away with her  
 
 ### Pre chorus  4x
 

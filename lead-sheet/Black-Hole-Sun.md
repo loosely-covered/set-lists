@@ -1,7 +1,5 @@
 # Black Hole Sun
 
-_breakdown note pushed_
-
 ### Intro  7x  
 
 ### Verse  16x + 4 ?
@@ -31,12 +29,27 @@ In my shoes, a walking sleep
 And my youth, I pray to keep  
 Heaven send Hell away  
 No one sings like you anymore  
+
+### Chorus  24x ?
+
+### Chorus  24x ?
+
+### Breakdown ? _breakdown note pushed_
+(Black hole sun, Black hole sun)  
+Won't you come?  
+(x 4)  
+
+### Guitar only ?
+
+### Verse  8x + 4 ?
 Hang my head, drown my fear  
 Till you all just disappear  
 
 ### Chorus  24x ?
-Black hole sun, won't you come?  
-And wash away the rain  
-Black hole sun, won't you come?  
+
+### Chorus  24x ?
+
+### Breakdown ?
+(Black hole sun, Black hole sun)  
 Won't you come?  
-(x3)
+(x 4)  

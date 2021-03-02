@@ -1,4 +1,4 @@
-# Nothing Compares 2 U {short="Nothing Compares"}  
+# Nothing Compares 2 U    
 
 ### Intro  8x  
   
@@ -29,13 +29,10 @@ Tell me .. where did I go wrong
 I could put my arms around any girl I choose  
 But it just reminds me of you  
 I went to the doctor and guess what it told me  
-Said, "Boy, you better try to have fun no matter what you do."  
+Said boy, u betta try to have fun no matter what u do  
 But he's a fool  
   
 ### Chorus  4x  
-
-Cause nothing compares  
-Nothing compares ... to you  
   
 ### Guitar Solo  12x+1  
   
@@ -48,9 +45,4 @@ And I know living with me baby is sometimes hard
 But I'm willing .. to give it another try  
   
 ### Chorus  8x  
-
-Cause nothing compares  
-Nothing compares ... to you  
-  
-Nothing compares  
-Nothing compares ... to you .. to you
+ .. to you

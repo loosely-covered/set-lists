@@ -1,8 +1,5 @@
 # Find Yourself  
   
-Vista Kicks cover of Lukas Nelson  
-<https://www.youtube.com/watch?v=GbuOB8jZ1_A>  
-  
 ### Intro  16x  
   
 ### Verse  16x  
@@ -10,7 +7,7 @@ Vista Kicks cover of Lukas Nelson
 Well I don't mind sleeping alone  
 If it means I don't have to play your crazy games no more  
 You're the most precious thing I've ever seen  
-But I ain't gonna let it slide when you're mean to me  
+But I ain't gonna let it slide when ur mean to me  
   
 ### Prechorus  4x  (_third-above_)  
   
@@ -26,20 +23,15 @@ Before I find somebody else to be my lover
 ### Verse  16x  
   
 Well, you tell me things I wanna hear  
-You want me near, and I know you feel me leaving you  
+U want me near, and I know you feel me leaving u  
 You think that I won't say goodbye  
-But baby I ain't standing by while you stretch the truth  
+But baby I ain't standing by while u stretch the truth  
   
 ### Prechorus  4x  (_third-above_)  
   
 I know the love that I deserve  
   
 ### Chorus  16x  (_third-above_)  
-  
-And I hope you find yourself  
-Before I find somebody else to be my lover  
-I said I hope you find yourself  
-Before I find somebody else to be my lover  
   
 ### Prechorus  4x  (_third-above_)  
   
@@ -54,11 +46,6 @@ Oh, I know the love that I deserve
 _retard_ I know the love that I deserve  
   
 ### Chorus  16x  (_third-above_)  
-  
-I said I hope you find yourself  
-Before I find somebody else to be my lover  
-I hope you find yourself  
-Before I find somebody else to be my lover  
   
 ### Chorus Vamp  16x  
   
