@@ -1,58 +1,72 @@
-# Some Kind Of Wonderful {short="Some Kind of W'full"}  
+# Some Kind Of Wonderful  
 
-I don't need a whole lots of money  
-I don't need a big fine car  
-I got everything that a man could want  
+### Intro  4x  
+  
+### Verse  16x  
+  
+I don't need a whole lotta money  
+I don't need a big, fine car  
+I got everything that a girl could want  
 I got more than I could ask for  
-And I don't have to run around  
+
+I don't have to run around  
 I don't have to stay out all night  
-'Cause I got me a sweet, a sweet loving woman  
-And she know just how to treat me right  
-Oh, my baby, she's alright  
-Oh, my baby's clean out of sight  
-Don't you know that she's?  
-She's some kind of wonderful  
-She's some kind of wonderful  
-Yes, she is, she is  
-She's some kind of wonderful  
-Yeah, yeah, yeah, yeah  
-When I hold her in my arms  
-You know she sets my soul on fire  
-Oh, when my baby kisses me  
+Cause I got a sweet, sweet lovin man  
+And he knows just how to treat me right  
+
+### Pre-chorus  4x  
+
+See, my baby, (he's alright)  
+See, my baby, we're so tight  
+
+### Chorus  8x  
+
+Don't you know he is (some kind of wonderful)  
+Yes, he is, he's (some kind of wonderful)  
+Don't you know he is (some kind of wonderful)  
+.. Let me tell you one more thing  
+
+### Verse  16x  
+
+Now, when he holds me in his arms  
+He sets my soul on fire  
+And, ooh, when my baby kisses me,  
 My heart becomes filled with desire  
-When she wraps her loving arms around me  
-It 'bout drives me out of my mind  
-Yeah, when my baby kisses me  
+
+When he wraps his loving arms around me  
+He almost drives me out of my mind  
+I get these funny little feelings inside of me (ooo)  
 Chills run up and down my spine  
-Oh, my baby, she's alright  
-Oh, my baby's clean out of sight  
-Don't you know that she is?  
-She's some kind of wonderful  
-She's some kind of wonderful  
-Yes, she is  
-She's some kind of wonderful  
-Yeah, yeah, yeah, yeah  
-Now is there anybody  
-Got a sweet little woman like mine?  
-There's got to be somebody  
-Got a, got a sweet little woman like mine  
-Yeah, now can I get a witness?  
-Can I get a witness?  
-Oh, can I get a witness?  
-Can I get a witness?  
-Can I get a witness?  
-Can I get a witness?  
-I'm talking, talking 'bout my baby  
-(She's some kind of wonderful)  
-Talking 'bout my baby  
-(She's some kind of wonderful)  
-Talking 'bout my baby  
-(She's some kind of wonderful)  
-Talking 'bout my baby, my baby, my baby  
-(She's some kind of wonderful)  
-Talking about my baby, my baby, my baby  
-(She's some kind of wonderful)  
-Yeah yeah yeah yeah, my baby, my baby  
-(She's some kind of wonderful)  
-Talking 'bout my baby, my baby, my baby  
-(She's some kind of wonderful)
+  
+### Pre-chorus  4x  
+  
+### Chorus  8x  
+
+..
+Now, hold on, let me know just one more thing  
+  
+### Breakdown  16x  
+
+Is there anyone out there with a sweet loving man like mine?  
+There's got to be somebody with a sweet, loving man like mine  
+Now, tell me ladies  
+
+(Can I get a witness)  
+Can I get a witness up in here, Ladies?  
+(Can I get a witness)  
+Can I get a witness, girl?  
+(Can I get a witness)  
+Do you know what I'm talkin about, Ladies, are you listening?  
+(Can I get a witness)  
+Wonderful, ooooooooooo  
+  
+### Chorus Outro  8x  (acapella)  
+
+(some kind of wonderful, don't you know he is) x4
+
+### Chorus Outro  8x  
+
+### Chorus Outro  8x  
+
+..  
+I'm talkin bout my baby, yeah  
